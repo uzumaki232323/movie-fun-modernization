@@ -5,7 +5,10 @@ buildscript {
         hibernateVersion = "5.2.17.Final"
         slf4jVersion = "1.7.25"
         junitVersion = "4.12"
+<<<<<<< HEAD
         mysqlVersion = "5.1.40"
+=======
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b
     }
 
     repositories {
@@ -20,6 +23,7 @@ buildscript {
 task dependenciesGraphDot {
 
     mustRunAfter "clean"
+<<<<<<< HEAD
 
     def graphBuildDir = "build/dependenciesGraph"
     def dotFile = file "$graphBuildDir/graph.dot"
@@ -35,6 +39,23 @@ task dependenciesGraphDot {
 
                 Configuration compileConfig = subProject.configurations["compile"]
 
+=======
+
+    def graphBuildDir = "build/dependenciesGraph"
+    def dotFile = file "$graphBuildDir/graph.dot"
+
+    doLast {
+        delete graphBuildDir
+        mkdir graphBuildDir
+
+        dotFile << "digraph dependencies {\n"
+
+        project.subprojects.forEach { Project subProject ->
+            try {
+
+                Configuration compileConfig = subProject.configurations["compile"]
+
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b
                 compileConfig
                         .dependencies
                         .grep { it.respondsTo("getDependencyProject") }
@@ -48,8 +69,15 @@ task dependenciesGraphDot {
 task dependenciesGraph(dependsOn: "dependenciesGraphDot", type: Exec) {
     workingDir "$project.buildDir/dependenciesGraph"
     commandLine "dot", "-O", "-Tpng", "graph.dot"
+<<<<<<< HEAD
 }
 task clean(type: Delete) {
     delete "build"
 }
 defaultTasks "clean", "build", "dependenciesGraph"
+=======
+}
+task clean(type: Delete) {
+    delete "build"
+}
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b

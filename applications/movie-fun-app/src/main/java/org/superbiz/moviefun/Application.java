@@ -10,8 +10,12 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.superbiz.moviefun.blobstore.BlobStore;
 import org.superbiz.moviefun.blobstore.S3Store;
+<<<<<<< HEAD:applications/movie-fun-app/src/main/java/org/superbiz/moviefun/Application.java
 import org.superbiz.moviefun.moviesapi.MovieServlet;
 import org.superbiz.cloudfoundry.ServiceCredentials;
+=======
+import org.superbiz.moviefun.movies.MovieServlet;
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b:applications/movie-fun-app/src/main/java/org/superbiz/moviefun/Application.java
 
 @SpringBootApplication
 public class Application {
