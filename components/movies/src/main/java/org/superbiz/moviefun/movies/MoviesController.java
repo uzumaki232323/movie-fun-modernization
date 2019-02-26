@@ -26,8 +26,13 @@ public class MoviesController {
 
     @GetMapping("/count")
     public int count(
+<<<<<<< HEAD
         @RequestParam(name = "field", required = false) String field,
         @RequestParam(name = "key", required = false) String key
+=======
+            @RequestParam(name = "field", required = false) String field,
+            @RequestParam(name = "key", required = false) String key
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
     ) {
         if (field != null && key != null) {
             return moviesRepository.count(field, key);
@@ -38,10 +43,17 @@ public class MoviesController {
 
     @GetMapping
     public List<Movie> find(
+<<<<<<< HEAD
         @RequestParam(name = "field", required = false) String field,
         @RequestParam(name = "key", required = false) String key,
         @RequestParam(name = "start", required = false) Integer start,
         @RequestParam(name = "pageSize", required = false) Integer pageSize
+=======
+            @RequestParam(name = "field", required = false) String field,
+            @RequestParam(name = "key", required = false) String key,
+            @RequestParam(name = "start", required = false) Integer start,
+            @RequestParam(name = "pageSize", required = false) Integer pageSize
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
     ) {
         if (field != null && key != null) {
             return moviesRepository.findRange(field, key, start, pageSize);
@@ -51,4 +63,8 @@ public class MoviesController {
             return moviesRepository.getMovies();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

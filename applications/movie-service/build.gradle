@@ -13,5 +13,10 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-data-jpa"
 
+<<<<<<< HEAD
     compile "mysql:mysql-connector-java:$mysqlVersion"
 }
+=======
+    compile "mysql:mysql-connector-java"
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

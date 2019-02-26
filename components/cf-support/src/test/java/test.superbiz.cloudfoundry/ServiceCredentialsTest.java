@@ -1,10 +1,15 @@
 package test.superbiz.cloudfoundry;
 
 import org.junit.Test;
+import org.superbiz.cloudfoundry.ServiceCredentials;
 
 import static org.hamcrest.core.IsEqual.equalTo;
+<<<<<<< HEAD:components/cf-support/src/test/java/test.superbiz.cloudfoundry/ServiceCredentialsTest.java
 import static org.junit.Assert.*;
 import org.superbiz.cloudfoundry.ServiceCredentials;
+=======
+import static org.junit.Assert.assertThat;
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd:applications/movie-fun-app/src/test/java/org/superbiz/moviefun/ServiceCredentialsTest.java
 
 public class ServiceCredentialsTest {
     @Test

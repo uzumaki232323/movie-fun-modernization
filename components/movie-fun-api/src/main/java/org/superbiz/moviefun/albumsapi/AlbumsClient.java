@@ -31,4 +31,8 @@ public class AlbumsClient {
 
         return restOperations.exchange(albumsUrl, GET, null, albumListType).getBody();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

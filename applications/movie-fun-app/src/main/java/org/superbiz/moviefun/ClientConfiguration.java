@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
 package org.superbiz.moviefun;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -28,4 +32,8 @@ public class ClientConfiguration {
     public MoviesClient moviesClient(RestOperations restOperations) {
         return new MoviesClient(moviesUrl, restOperations);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

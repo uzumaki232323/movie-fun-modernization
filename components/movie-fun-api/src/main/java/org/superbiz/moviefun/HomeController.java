@@ -10,4 +10,8 @@ public class HomeController {
     public String index() {
         return "index";
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

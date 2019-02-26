@@ -5,4 +5,8 @@ targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b

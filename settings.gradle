@@ -1,6 +1,10 @@
 rootProject.name = "moviefun"
 
 include "applications:movie-fun-app"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
 include "applications:album-service"
 include "applications:movie-service"
 
@@ -9,5 +13,13 @@ include "components:blobstore"
 include "components:movies"
 include "components:movie-fun-api"
 include "components:cf-support"
+<<<<<<< HEAD
 include "databases:album-database"
 include "databases:movie-database"
+=======
+=======
+
+include "components:albums"
+include "components:movies"
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

@@ -1,16 +1,45 @@
 apply from: "../../java.gradle"
 
 dependencies {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
     compile project(":components:blobstore")
 
     compile "org.springframework:spring-core:$springVersion"
     compile "org.springframework:spring-web:$springVersion"
     compile "org.springframework:spring-context:$springVersion"
     compile "org.springframework:spring-jdbc:$springVersion"
+<<<<<<< HEAD
+=======
     compile "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.7.0"
 
     compile "org.hibernate:hibernate-core:$hibernateVersion"
     compile "org.slf4j:slf4j-api:$slf4jVersion"
 
     testCompile "junit:junit:$junitVersion"
+=======
+    compile "org.springframework:spring-core:$springVersion"
+    compile "org.springframework:spring-context:$springVersion"
+    compile "org.springframework:spring-tx:$springVersion"
+    compile "org.springframework:spring-web:$springVersion"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.8.4"
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
+    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.7.0"
+    compile "org.springframework:spring-jdbc:$springVersion"
+
+
+    compile "org.hibernate:hibernate-core:$hibernateVersion"
+    compile "javax.servlet:javax.servlet-api:3.1.0"
+    compile "org.slf4j:slf4j-api:$slf4jVersion"
+
+    testCompile "junit:junit:$junitVersion"
+<<<<<<< HEAD
+=======
+
+    compile "org.apache.tika:tika-core:1.14"
+    compile "com.amazonaws:aws-java-sdk:1.11.74"
+>>>>>>> 0dd44b557277f4520e6033aaaafc79551e955f9b
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
 }

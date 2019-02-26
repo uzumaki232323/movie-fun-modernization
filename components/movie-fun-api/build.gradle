@@ -8,4 +8,8 @@ dependencies {
 
     compile "javax.servlet:javax.servlet-api:3.1.0"
     compile "org.slf4j:slf4j-api:$slf4jVersion"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

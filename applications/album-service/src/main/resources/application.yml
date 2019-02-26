@@ -21,4 +21,8 @@ logging.level:
 s3:
   accessKey: <access key id>
   secretKey: <secret access key>
+<<<<<<< HEAD
   bucketName: <name of the bucket>
+=======
+bucketName: <name of the bucket>
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

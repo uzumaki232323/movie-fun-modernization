@@ -24,8 +24,13 @@ public class AlbumServiceApplication {
 
     @Bean
     public BlobStore blobStore(
+<<<<<<< HEAD
         ServiceCredentials serviceCredentials,
         @Value("${vcap.services.photo-storage.credentials.endpoint:#{null}}") String endpoint
+=======
+            ServiceCredentials serviceCredentials,
+            @Value("${vcap.services.photo-storage.credentials.endpoint:#{null}}") String endpoint
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
     ) {
         String photoStorageAccessKeyId = serviceCredentials.getCredential("photo-storage", "user-provided", "access_key_id");
         String photoStorageSecretKey = serviceCredentials.getCredential("photo-storage", "user-provided", "secret_access_key");
@@ -40,4 +45,8 @@ public class AlbumServiceApplication {
 
         return new S3Store(s3Client, photoStorageBucket);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd

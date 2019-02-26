@@ -66,6 +66,7 @@ public class AlbumInfo {
     @Override
     public String toString() {
         return "AlbumInfo{" +
+<<<<<<< HEAD
             "id=" + id +
             ", artist='" + artist + '\'' +
             ", title='" + title + '\'' +
@@ -74,3 +75,13 @@ public class AlbumInfo {
             '}';
     }
 }
+=======
+                "id=" + id +
+                ", artist='" + artist + '\'' +
+                ", title='" + title + '\'' +
+                ", year=" + year +
+                ", rating=" + rating +
+                '}';
+    }
+}
+>>>>>>> cf317882c797a5c5edd36f52446d5a8eb5c219cd
